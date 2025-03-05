@@ -41,18 +41,18 @@
         h1{
             color:#F2E8CF;
             font-size: 200px;
-            position: fixed;
-            top: 60px;
-            left: 80px;
+            position: absolute;
+            top: 95px;
+            left: 220px;
             text-align: center;
             font-family:"Josefin Sans",serif;
         }
         .caption{
             color:#F2E8CF;
             font-size: 30px;
-            position: fixed;
-            top: 340px;
-            left: 280px;
+            position: absolute;
+            top: 365px;
+            left: 350px;
             text-align: center;
             font-family:"Josefin Sans",serif;
         }
@@ -97,7 +97,7 @@
             left: 435px;
             background-size: 200px 50px;
             backdrop-filter: blur(10px);
-            position: fixed;
+            position: absolute;
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
         .music-item h3 {
@@ -111,7 +111,7 @@
             color: #F5EBE0;
         }
         .outer-box{
-            position:fixed;
+            position:absolute;
             height:100%;
             width:100%;
             z-index:0;
@@ -156,9 +156,10 @@
             font-family: "Raleway", serif;
         }
         .language-container {
-            margin-top: 40px;
-            margin-left: 293px;
+            margin-top: 25px;
+            margin-left: 600px;
             display: none; /* Hidden initially */
+            position:absolute;
         }
         .language-dropdown {
             width: 675px;
@@ -179,15 +180,18 @@
             background-repeat: no-repeat;
             background-position: right 10px center;
             background-size: 12px;
+            position:absolute;
+            left:50%;
         }
         .language-dropdown option {
             background-color: rgba(25, 10, 5, 0.8);
             color: #F5EBE0;
+            position:absolute;
         }
 
         /* Right Side Navigation Bar */
         .right-nav {
-            position: fixed;
+            position: absolute;
             top: 100px;
             right: 0;
             transform: translateY(-50%);
@@ -336,7 +340,7 @@
         /* Popup Box */
         .popup-box {
             display: none; /* Hidden initially */
-            position: fixed;
+            position: absolute;
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
@@ -391,6 +395,11 @@
             z-index: 1001;
             box-shadow: 0px 1px 60px 1px antiquewhite;
         }
+        @media (max-width: 768px) {  /* Targets devices with width <= 768px */
+    body {
+        display: none; /* Hides the entire page */
+    }
+}
     </style>
 </head>
 <body>
@@ -417,7 +426,7 @@
         </div>
         <div class="search-container">
         <form id="searchForm">
-            <input type="text" class="inp" name="search" placeholder="Search Musify..." id="moodSearchBox" style="margin-top: 40px;" />
+            <input type="text" class="inp" name="search" placeholder="Search Musify..." id="moodSearchBox" style="margin-top: 105px;" />
             <!--<button type="submit" class="proceed"><i class="fa-solid fa-music"></i></button>-->
         </form>
         </div>
